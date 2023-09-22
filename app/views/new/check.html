@@ -58,7 +58,7 @@
           actions: {
             items: [
               {
-                href: "/new/name",
+                href: "/new/name?returnUrl=/new/check",
                 text: "Change",
                 visuallyHiddenText: "your name"
               }
@@ -75,7 +75,7 @@
           actions: {
             items: [
               {
-                href: "/new/country",
+                href: "/new/country?returnUrl=/new/check",
                 text: "Change",
                 visuallyHiddenText: "your country"
               }
@@ -137,8 +137,6 @@
     }) }}
 
     <p>By submitting this application you’re confirming that, to the best of your knowledge, the details you are providing are correct.</p>
-
-
 
     <form novalidate method="post">
       {{ govukButton({

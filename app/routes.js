@@ -15,11 +15,19 @@ router.post('/new/code', (req, res) => {
 })
 
 router.post('/new/name', (req, res) => {
-  res.redirect('/new/country')
+  if(req.query.returnUrl) {
+    res.redirect(req.query.returnUrl)
+  } else {
+    res.redirect('/new/country')
+  }
 })
 
 router.post('/new/country', (req, res) => {
-  res.redirect('/new/juggling-balls')
+  if(req.query.returnUrl) {
+    res.redirect(req.query.returnUrl)
+  } else {
+    res.redirect('/new/juggling-balls')
+  }
 })
 
 router.post('/new/juggling-balls', (req, res) => {
