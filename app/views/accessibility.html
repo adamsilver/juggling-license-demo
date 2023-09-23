@@ -1,0 +1,34 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName = "Accessibility statement" %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-l">{{ pageName }}</h1>
+    <p>The GOV.UK Design System team at the Government Digital Service (GDS) maintains the following products:</p>
+
+    <ul class="govuk-list govuk-list--bullet">
+      <li>
+        GOV.UK Design System website
+      </li>
+      <li>
+        GOV.UK Frontend documentation website
+      </li>
+      <li>
+        GOV.UK Frontend codebase
+      </li>
+    </ul>
+
+    <h2 class="govuk-heading-m">
+      Another heading here
+    </h2>
+
+    <p>This page explains how the team works to ensure these products are accessible.</p>
+
+    <p>The GOV.UK Prototype Kit website has a separate accessibility statement. Read the GOV.UK Prototype Kit website accessibility statement.</p>
+  </div>
+</div>
+
+{% endblock %}
